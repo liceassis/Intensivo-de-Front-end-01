@@ -1,0 +1,138 @@
+ body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            /*cor de fundo*/
+            background-color: white; 
+            /*cor da letra*/
+            color: black; 
+        }
+        header{
+            background-color: #0F52BA;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+        header h1{
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav{
+            background-color: #4688eb;
+            /*usa o layout flexivel*/
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a{
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        /*efeito ao passar o mouse nos links*/
+        nav a:hover{
+            color: #0F52BA;
+        }
+    
+        main{
+            padding: 30px;
+            /*largura max 1000px*/
+            max-width: 1000px;
+            /*centraliza na horizontal*/
+            margin: auto;
+            background-color: white;
+        }
+        section{
+            margin-bottom: 40px;
+        }
+        h1{
+            color: #0F52BA;
+            border-bottom: 2px solid #0F52BA;
+            padding-bottom: 5px;  
+        }
+        h2{
+            color: #0F52BA;
+            border-bottom: 2px solid #77abf8;
+            padding-bottom: 5px;
+        }
+        img{
+            /*bordas arrendodadas*/
+            border-radius: 10px;
+            /*borda amerela*/
+            border: 3px solid #77abf8;
+            /*espaço acima de imagina*/
+            margin-top: 10px;
+        }
+        ul, ol{
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        th, td{
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            /*junta as bordas das células*/
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .linkDicas{
+            color: #003049;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .linkDica:hover{
+            text-decoration: underline;
+        }
+        section a:hover{
+        color: blue;
+        }
+        form{
+            /*Define cinza claro para o fundo*/
+            background-color: #f9f9f9;
+            /*Espaçamento interno de 30px nos lados*/
+            padding: 30px;
+            /*cantos arredondados em 30px*/
+            border-radius: 30px;
+            /*leve sombra*/
+            box-shadow: 0 0 10px black;
+            /*Espaço acima do formulario*/
+            margin-top: 50px;
+        }
+        form label{
+            /*faz com que ele ocupe a linha*/
+            display: block;
+            /*Espaço acima de cada label*/
+            margin-top: 8px;
+            /*label em negrito*/
+            font-weight: bold;
+            /*cor do label*/
+            color:#003049;
+        }
+        form input, 
+        form select,
+        form textarea{
+            /*O campo vai ocupar toda a linha*/
+            width: 100%;
+            /*espaçamento interno de 12px*/
+            padding: 16px;
+            /*espaço entre o label e o campo*/
+            margin-top: 6px;
+            /*borda cinza de 1px*/
+            border: 1px solid #ccc;
+            /*arredonda os cantos em 6px*/
+            border-radius: 6px;
+            /*tamanho da fonte*/
+            font-size: 14px;
+            /*cor do fundo*/
+            background-color: #fff;
+            /*inclui padding e borda na largura total*/
+            box-sizing: border-box;
+        }
+         
+         footer{
+            background-color: #70a4f2;
+            justify-content: center;
+         }
