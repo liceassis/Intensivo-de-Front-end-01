@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vivamundo</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+     <nav>
+        <div class="menu">
+            <a href="./index04.html">Destinos</a>
+            <a href="./contato.html">Contato</a>
+        </div>
+    </nav>
+    <h1>Explore o mundo 🌍</h1>
+<section>
+     <p>
+            Encontre seu próximo destino e viva experiências
+            inesquecíveis pelo mundo.
+     </p>
+
+    <button id="botaoCor">
+        Explorar destinos
+    </button>
+</section>
+
+<section>
+    <h2>Contador de cliques</h2>
+
+    <p>
+        Cliques: <span id="contador">0</span>
+    </p>
+
+    <button id="botaoContador">
+        Clique aqui
+    </button>
+</section>
+
+<section>
+    <h2>Aviso</h2>
+
+    <button id="abrirModal">
+        Abrir aviso
+    </button>
+</section>
+
+<div id="modal">
+    <div class="conteudo-modal">
+        <h2>Aviso!</h2>
+
+        <p>
+            Seu próximo destino começa aqui!
+        </p>
+
+        <button id="fecharModal">
+            Fechar
+        </button>
+    </div>
+</div>
+
+<section>
+    <h2>Conheça alguns dos nossos destinos.</h2>
+
+    <p>Clique em uma imagem para ampliá-la.</p>
+
+    <div class="galeria">
+
+        <img
+            src="./rio de janeiro.jpg"
+            alt="Imagem 1"
+        >
+
+        <img
+            src="./paris.jpg"
+            alt="Imagem 2"
+        >
+
+        <img
+            src="./bali.jpg"
+            alt="Imagem 3"
+        >
+
+        <img
+            src="./construcciones-machu-picchu-full.jpg"
+            alt="Imagem 4"
+        >
+
+    </div>
+</section>
+
+<div id="imagemAmpliada">
+    <img id="imagemGrande" src="" alt="Imagem ampliada">
+</div>
+
+<section>
+    <h2>Escolha seu destino!🗺️</h2>
+
+    <div class="tabs">
+
+        <button class="tab ativa" data-tab="tab1">
+            América do Sul
+        </button>
+
+        <button class="tab" data-tab="tab2">
+            Europa
+        </button>
+
+        <button class="tab" data-tab="tab3">
+            Ásia
+        </button>
+
+    </div>
+
+    <div id="tab1" class="conteudo-tab ativo">
+        <h3>Rio de Janeiro, Brasil</h3>
+        <p>
+            praias, Cristo Redentor e Pão de Açúcar.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 899</p>
+        <br>
+        <h3>Buenos Aires, Argentina</h3>
+        <p>
+            arquitetura, tango e gastronomia.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 1.899</p>
+        <br>
+         <h3>Santiago, Chile</h3>
+        <p>
+            montanhas, neve e vinícolas.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 2.499</p>
+        <br>
+         <h3>Cusco, Peru</h3>
+        <p>
+            cultura, história e Machu Picchu.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 2.799</p>
+    </div>
+
+    <div id="tab2" class="conteudo-tab">
+        <h3>Paris, França</h3>
+        <p>
+            Torre Eiffel, Louvre e gastronomia.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 3.999</p>
+        <br>
+        <h3>Roma, Itália</h3>
+        <p>
+            Coliseu, Vaticano e história.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 3.799</p>
+        <br>
+         <h3>Barcelona, Espanha</h3>
+        <p>
+            arquitetura, praias e cultura.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 3.599</p>
+        <br>
+         <h3>Lisboa, Portugal</h3>
+        <p>
+            história, gastronomia e belas paisagens.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 3.299</p>
+    </div>
+
+    <div id="tab3" class="conteudo-tab">
+        <h3>Tóquio, Japão</h3>
+        <p>
+            Tecnologia, cultura e gastronomia.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 6.299</p>
+        <br>
+        <h3>Bali, Indonésia</h3>
+        <p>
+            Praias, templos e natureza.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 4.999</p>
+        <br>
+         <h3>Seul, Coreia do Sul</h3>
+        <p>
+            Tecnologia, cultura e entretenimento.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 5.499</p>
+        <br>
+         <h3>Bangkok, Tailândia</h3>
+        <p>
+            Templos, mercados e gastronomia.
+        </p>
+        <p class="preco" style="color: #00A896;">A partir de R$ 5.199</p>
+    </div>
+
+</section>
+<footer>
+     <p>© 2026 Vivamundo - Todos os direitos reservados.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
