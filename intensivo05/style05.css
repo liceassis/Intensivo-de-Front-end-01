@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+/* GRID PRINCIPAL */
+.container {
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 80px 60px 1fr 50px;
+
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+/* HEADER */
+header {
+    grid-area: header;
+
+    background: #253D2C;
+    color: white;
+
+    display: grid;
+    place-items: center;
+}
+
+/* NAV */
+aside {
+    grid-area: nav;
+
+    background: #2E6F40;
+
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #68BA7F;
+}
+
+/* CONTEÚDO */
+main {
+    grid-area: main;
+
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+
+    /* SOMBRA */
+    box-shadow: 0 5px 15px #aaa;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* BOTÃO ANIMADO */
+.btn-animado {
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #68BA7F;
+    color: white;
+
+    cursor: pointer;
+
+    animation: pulsar 2s infinite;
+}
+
+/* ANIMAÇÃO */
+@keyframes pulsar {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* BOTÕES COM CLIP-PATH */
+.botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.btn-forma {
+    padding: 15px;
+
+    border: none;
+
+    background: #673ab7;
+    color: white;
+
+    cursor: pointer;
+
+    /* FORMATO DIFERENTE */
+    clip-path: polygon(
+        10% 0,
+        90% 0,
+        100% 50%,
+        90% 100%,
+        10% 100%,
+        0 50%
+    );
+}
+
+.btn-diamante {
+    background: #e91e63;
+
+    clip-path: polygon(
+        50% 0,
+        100% 50%,
+        50% 100%,
+        0 50%
+    );
+}
+
+/* FORMULÁRIO */
+.formulario {
+    display: grid;
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+.campo {
+    display: grid;
+    gap: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+/* PLACEHOLDER */
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+/* FOCUS */
+input:focus,
+textarea:focus {
+    border-color: #68BA7F;
+
+    box-shadow: 0 0 5px #68BA7F;
+}
+
+.enviar {
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #68BA7F;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+
+    background: #253D2C;
+    color: white;
+
+    display: grid;
+    place-items: center;
+}
+
+/* CELULAR */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
