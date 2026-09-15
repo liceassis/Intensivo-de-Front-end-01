@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06 - Frameworks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style06.css">
+
+    <head>
+
+    <body>
+
+<nav class="material-navbar">
+
+    <span class="material-icons">
+        home
+    </span>
+
+    <span class="nav-titulo">
+        Meu Portfólio
+    </span>
+
+    <div class="material-links">
+
+        <a href="#inicio">Início</a>
+        <a href="#bootstrap">Bootstrap</a>
+        <a href="#mui">MUI</a>
+        <a href="#tailwind">Tailwind</a>
+        <a href="#material">Material-UI</a>
+        <a href="#grid">Grid Bootstrap</a>
+
+    </div>
+
+</nav>
+
+        <main>
+            <article>
+
+                <!-- Início -->
+
+                <section id="inicio">
+
+                    <h2>Interfaces Web com Frameworks</h2>
+
+                    <p>
+                        Nesta atividade foram desenvolvidas diferentes
+                        interfaces utilizando frameworks e bibliotecas
+                        utilizadas no desenvolvimento front-end.
+                    </p>
+
+                    <p>
+                        Foram utilizados Bootstrap, MUI, Tailwind CSS
+                        e o sistema de Grid do Bootstrap.
+                    </p>
+
+                </section>
+
+
+                <!-- Bootstrap -->
+
+                <section id="bootstrap">
+
+                    <h2>Layout com Bootstrap</h2>
+
+                    <p>
+                        O layout abaixo utiliza componentes e classes
+                        disponibilizados pelo Bootstrap.
+                    </p>
+
+                    <div class="container">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+
+                                <div class="bootstrap-box">
+
+                                    <h3>HTML</h3>
+
+                                    <p>
+                                        Estrutura das páginas web.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <div class="bootstrap-box">
+
+                                    <h3>CSS</h3>
+
+                                    <p>
+                                        Estilização das interfaces.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <div class="bootstrap-box">
+
+                                    <h3>JavaScript</h3>
+
+                                    <p>
+                                        Interatividade das aplicações.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- MUI -->
+
+                <section id="mui">
+
+                    <h2>Modal com MUI</h2>
+
+                    <p>
+                        Clique no botão abaixo para visualizar um
+                        exemplo de modal utilizando o conceito do
+                        Material UI.
+                    </p>
+
+                    <button class="mui-button" onclick="abrirModal()">
+                        Abrir Modal
+                    </button>
+
+
+                    <div id="modal" class="modal">
+
+                        <div class="modal-conteudo">
+
+                            <span class="fechar" onclick="fecharModal()">
+                                &times;
+                            </span>
+
+                            <h3>Modal MUI</h3>
+
+                            <p>
+                                Este é um exemplo de uma janela modal
+                                utilizando o estilo visual do
+                                Material UI.
+                            </p>
+
+                            <button class="mui-button" onclick="fecharModal()">
+                                Fechar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Tailwind -->
+
+                <section id="tailwind">
+
+                    <h2>Cards com Tailwind CSS</h2>
+
+                    <p>
+                        Os cards abaixo foram estilizados utilizando
+                        classes do Tailwind CSS.
+                    </p>
+
+
+                    <div class="flex flex-wrap justify-center gap-6 mt-6">
+
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-64 border border-red-200">
+
+                            <h3 class="text-xl font-bold text-red-700 mb-3">
+                                Bootstrap
+                            </h3>
+
+                            <p class="text-gray-700">
+                                Framework para criação rápida de interfaces
+                                responsivas.
+                            </p>
+
+                        </div>
+
+
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-64 border border-red-200">
+
+                            <h3 class="text-xl font-bold text-red-700 mb-3">
+                                Tailwind
+                            </h3>
+
+                            <p class="text-gray-700">
+                                Framework baseado em classes utilitárias
+                                para estilização.
+                            </p>
+
+                        </div>
+
+
+                        <div class="bg-white rounded-lg shadow-lg p-6 w-64 border border-red-200">
+
+                            <h3 class="text-xl font-bold text-red-700 mb-3">
+                                MUI
+                            </h3>
+
+                            <p class="text-gray-700">
+                                Biblioteca de componentes baseada no
+                                Material Design.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                
+
+                <!-- Grid Bootstrap -->
+
+                <section id="grid">
+
+                    <h2>Grid Responsivo com Bootstrap</h2>
+
+                    <p>
+                        O sistema de Grid do Bootstrap permite organizar
+                        os elementos de forma responsiva.
+                    </p>
+
+
+                    <div class="container">
+
+                        <div class="row g-3">
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="grid-item">
+                                    Coluna 1
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="grid-item">
+                                    Coluna 2
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="grid-item">
+                                    Coluna 3
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+
+                                <div class="grid-item">
+                                    Coluna 4
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </article>
+
+        </main>
+        <footer>
+            <p>
+                © 2026 - Atividade de Frameworks 
+            </p>
+
+        </footer>
+        <script> function abrirModal() { document.getElementById("modal").style.display = "flex"; } function fecharModal() { document.getElementById("modal").style.display = "none"; } </script>
+    </body>
+</html>
