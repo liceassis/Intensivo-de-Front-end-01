@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f4f7;
+
+    color: #333;
+
+    line-height: 1.5;
+}
+
+header {
+    background-color: #2563eb;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+}
+
+.exercicio {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+.exercicio h2 {
+    color: #2563eb;
+
+    margin-bottom: 12px;
+}
+
+
+.exercicio > p {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    padding: 11px 18px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background-color: white;
+}
+
+
+input:focus,
+select:focus {
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 5px;
+
+    margin-bottom: 4px;
+}
+
+
+
+/*EXERCÍCIO 1*/
+
+#resultadoPosts {
+    margin-top: 20px;
+}
+
+
+.post {
+    border: 1px solid #ddd;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 7px;
+
+    background-color: #fafafa;
+}
+
+
+.post h3 {
+    color: #2563eb;
+
+    margin-bottom: 8px;
+
+    text-transform: capitalize;
+}
+
+
+
+/*EXERCÍCIO 2*/
+
+#resultadoBusca {
+    margin-top: 20px;
+}
+
+
+.usuario {
+    border: 1px solid #ddd;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 7px;
+
+    background-color: #fafafa;
+}
+
+
+.usuario h3 {
+    color: #2563eb;
+
+    margin-bottom: 7px;
+}
+
+
+
+/*EXERCÍCIO 3*/
+
+#formLogin {
+    max-width: 400px;
+}
+
+
+#mensagemLogin {
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+.sucesso {
+    color: #166534;
+
+    background-color: #dcfce7;
+}
+
+
+.erro {
+    color: #991b1b;
+
+    background-color: #fee2e2;
+}
+
+
+#dadosUsuario {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    background-color: #eff6ff;
+}
+
+
+#dadosUsuario h3 {
+    color: #2563eb;
+
+    margin-bottom: 8px;
+}
+
+
+
+/*EXERCÍCIO 4*/
+
+#listaUsuarios {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.card-usuario {
+    border: 1px solid #ddd;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    background-color: #fafafa;
+}
+
+
+.card-usuario h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+.card-usuario p {
+    margin-bottom: 5px;
+}
+
+/*EXERCÍCIO 5*/
+
+#resultadoClima {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    background-color: #eff6ff;
+}
+
+
+.temperatura {
+    font-size: 45px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin: 10px 0;
+}
+
+
+.info-clima {
+    margin: 8px 0;
+}
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #666;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+    }
+
+
+    .exercicio {
+        padding: 18px;
+    }
+
+
+    header h1 {
+        font-size: 25px;
+    }
+
+}
+
+footer {
+background: #2563eb;
+color: #ffffff;
+
+text-align: center;
+
+padding: 1.5rem;
+
+border-top: 3px solid #2563eb;
+}

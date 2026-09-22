@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Exercícios com APIs</title>
+
+    <link rel="stylesheet" href="style07.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Exercícios com APIs</h1>
+
+        <p>
+            JavaScript, Fetch, Login e Previsão do Tempo
+        </p>
+
+    </header>
+
+
+    <main>
+
+
+        <!--EXERCÍCIO 1-->
+
+        <section class="exercicio">
+
+            <h2>Buscar dados de uma API</h2>
+
+            <p>
+                Clique no botão para buscar informações
+                de uma API pública.
+            </p>
+
+            <button id="buscarPosts">
+                Buscar informações
+            </button>
+
+            <div id="resultadoPosts"></div>
+
+        </section>
+
+
+
+        <!--EXERCÍCIO 2-->
+
+        <section class="exercicio">
+
+            <h2>Campo de busca</h2>
+
+            <p>
+                Digite o nome de um usuário para
+                encontrar na lista.
+            </p>
+
+            <input
+                type="text"
+                id="campoBusca"
+                placeholder="Digite um nome..."
+            >
+
+            <div id="resultadoBusca"></div>
+
+        </section>
+
+
+
+        <!--EXERCÍCIO 3-->
+
+        <section class="exercicio">
+
+            <h2>Sistema de Login</h2>
+
+            <p>
+                Faça login utilizando um dos
+                usuários cadastrados.
+            </p>
+
+
+            <form id="formLogin">
+
+                <label for="usuario">
+                    Usuário:
+                </label>
+
+                <input
+                    type="text"
+                    id="usuario"
+                    placeholder="Digite seu usuário"
+                    required
+                >
+
+
+                <label for="senha">
+                    Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+
+            <div id="mensagemLogin"></div>
+
+
+            <div id="dadosUsuario"></div>
+
+        </section>
+
+
+
+        <!--EXERCÍCIO 4-->
+
+        <section class="exercicio">
+
+            <h2>Lista de usuários</h2>
+
+            <p>
+                Estes usuários estão cadastrados no sistema.
+            </p>
+
+
+            <div id="listaUsuarios"></div>
+
+        </section>
+
+
+
+        <!--EXERCÍCIO 5-->
+
+        <section class="exercicio">
+
+            <h2>Previsão do tempo</h2>
+
+            <p>
+                Permita o acesso à sua localização para consultar
+                o clima atual.
+            </p>
+
+            <button id="buscarClima">
+                Ver minha previsão
+            </button>
+
+            <div id="resultadoClima"></div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+            <p>
+                © 2026 - Atividades de APIs
+            </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
