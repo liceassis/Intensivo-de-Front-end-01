@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f8ff;
+    color: #222;
+    font-size: 1rem;
+}
+
+/* Menu */
+nav {
+    background: #0d6efd;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddbbff;
+}
+
+/* Conteúdo principal */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    text-align: center;
+}
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.6rem;
+    border: 1px solid #b6d4fe;
+    box-shadow: 0 3px 8px rgba(13, 110, 253, 0.15);
+}
+
+section h2 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+/* Subtítulos */
+.subtitulo {
+    color: #7F00FF;
+    margin: 2rem 0 1rem;
+}
+
+/* Botões */
+button {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.4rem;
+    background: #0d6efd;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7F00FF;
+}
+
+/* Campos */
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #b6d4fe;
+    border-radius: 0.4rem;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px #dbeafe;
+}
+
+label {
+    display: block;
+    text-align: left;
+    color: #0d6efd;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+/* Conceitos */
+.conceitos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.conceito-card {
+    background: #f2f8ff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b6d4fe;
+}
+
+.conceito-card:nth-child(2) {
+    background: #eee1fc;
+    border-color: #ddbbff;
+}
+
+.conceito-card .material-icons {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.conceito-card:nth-child(2) .material-icons {
+    color: #7F00FF;
+}
+
+.conceito-card h3 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.conceito-card:nth-child(2) h3 {
+    color: #7F00FF;
+}
+
+/* Análise */
+.analise-card {
+    background: #f2f8ff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b6d4fe;
+    text-align: left;
+}
+
+.analise-card h3 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.analise-card h4 {
+    color: #7F00FF;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.analise-card ul {
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Formulários */
+.formularios-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.formulario-antigo,
+.formulario-novo {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+.formulario-antigo {
+    background: #eee1fc;
+    border: 1px solid #ddbbff;
+}
+
+.formulario-novo {
+    background: #f2f8ff;
+    border: 1px solid #b6d4fe;
+}
+
+.formulario-antigo h3 {
+    color: #7F00FF;
+    margin-bottom: 1rem;
+}
+
+.formulario-novo h3 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.formulario-antigo button {
+    background: #7F00FF;
+}
+
+/* Mensagem de sucesso */
+.sucesso {
+    color: #0d6efd !important;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Teste */
+.teste-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.teste-card {
+    background: #f2f8ff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b6d4fe;
+}
+
+.teste-card:nth-child(2) {
+    background: #eee1fc;
+    border-color: #ddbbff;
+}
+
+.teste-card h3 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.teste-card:nth-child(2) h3 {
+    color: #7F00FF;
+}
+
+.botaoB {
+    background: #7F00FF;
+}
+
+.botaoB:hover {
+    background: #0d6efd;
+}
+
+.teste-card p {
+    margin-top: 1rem;
+}
+
+.resultadoAB {
+    color: #0d6efd !important;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+/* Mobile */
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 1.5rem auto 0;
+    padding: 2rem;
+    background: #f2f8ff;
+    border: 1px solid #b6d4fe;
+    border-radius: 0.6rem;
+}
+
+.mobile-container .material-icons {
+    font-size: 3rem;
+    color: #7F00FF;
+    margin-bottom: 1rem;
+}
+
+.mobile-container h3 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.mobile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Acessibilidade */
+.acessibilidade-container {
+    max-width: 600px;
+    margin: 1.5rem auto;
+}
+
+.acessibilidade-container form {
+    background: #f2f8ff;
+    padding: 1.5rem;
+    border: 1px solid #b6d4fe;
+    border-radius: 0.5rem;
+}
+
+.acessibilidade-container small {
+    display: block;
+    text-align: left;
+    color: #555;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.acessibilidade-info {
+    background: #eee1fc;
+    padding: 1.5rem;
+    border: 1px solid #ddbbff;
+    border-radius: 0.5rem;
+    text-align: left;
+}
+
+.acessibilidade-info h3 {
+    color: #7F00FF;
+    margin-bottom: 1rem;
+}
+
+.acessibilidade-info ul {
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Aside */
+aside {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    border: 1px solid #ddbbff;
+    margin-bottom: 2rem;
+}
+
+aside h2 {
+    color: #7F00FF;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+    line-height: 2;
+}
+
+/* Rodapé */
+footer {
+    background: #7F00FF;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 3px solid #0d6efd;
+}
+
+/* Responsividade - Tablets */
+@media (max-width: 800px) {
+    main {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .conceitos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .formularios-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teste-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsividade - Celulares */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main {
+        width: 95%;
+        margin: 1.5rem auto;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .conceitos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .formularios-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teste-container {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-container {
+        padding: 1.5rem;
+    }
+}
+
+

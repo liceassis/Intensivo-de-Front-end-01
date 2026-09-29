@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style08.css">
+</head>
+<body>
+
+
+<nav>
+
+    <ul>
+
+        <li>
+            <a href="#inicio">Início</a>
+        </li>
+
+        <li>
+            <a href="#uxui">UX x UI</a>
+        </li>
+
+        <li>
+            <a href="#redesign">Redesign</a>
+        </li>
+
+        <li>
+            <a href="#testeAB">Teste A/B</a>
+        </li>
+
+        <li>
+            <a href="#cadastro">Cadastro</a>
+        </li>
+
+        <li>
+            <a href="#acessibilidade">Acessibilidade</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+<main>
+
+    <article>
+
+
+
+        <!-- UX e UI -->
+
+        <section id="uxui">
+
+            <h2>Diferença entre UX e UI</h2>
+
+            <div class="conceitos-container">
+
+                <div class="conceito-card">
+
+                    <span class="material-icons">
+                        psychology
+                    </span>
+
+                    <h3>UX - User Experience</h3>
+
+                    <p>
+                        UX está relacionado à experiência do usuário
+                        durante a utilização de um site ou sistema.
+                    </p>
+
+                    <p>
+                        Envolve facilidade de uso, organização,
+                        navegação, acessibilidade e satisfação
+                        do usuário.
+                    </p>
+
+                </div>
+
+
+                <div class="conceito-card">
+
+                    <span class="material-icons">
+                        palette
+                    </span>
+
+                    <h3>UI - User Interface</h3>
+
+                    <p>
+                        UI está relacionado à aparência e aos
+                        elementos visuais de uma interface.
+                    </p>
+
+                    <p>
+                        Envolve cores, tipografia, botões,
+                        espaçamento, ícones e organização visual.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <h3 class="subtitulo">
+                Análise de um site famoso
+            </h3>
+
+
+            <div class="analise-card">
+
+                <h3>YouTube</h3>
+
+<p>
+    O YouTube apresenta uma interface organizada e
+    intuitiva, facilitando o acesso aos vídeos, canais
+    e ferramentas de interação da plataforma.
+</p>
+
+
+<h4>Aspectos de UI</h4>
+
+<ul>
+
+    <li>
+        Interface visual organizada.
+    </li>
+
+    <li>
+        Uso de miniaturas para identificar os vídeos.
+    </li>
+
+    <li>
+        Menus e botões facilmente identificáveis.
+    </li>
+
+    <li>
+        Boa organização dos conteúdos na tela.
+    </li>
+
+</ul>
+
+
+<h4>Aspectos de UX</h4>
+
+<ul>
+
+    <li>
+        Navegação simples entre diferentes conteúdos.
+    </li>
+
+    <li>
+        Facilidade para encontrar vídeos por meio da busca.
+    </li>
+
+    <li>
+        Recomendações personalizadas de conteúdo.
+    </li>
+
+    <li>
+        Experiência de uso adaptada a diferentes dispositivos.
+    </li>
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- Redesign -->
+
+        <section id="redesign">
+
+            <h2>Redesign de Formulário</h2>
+
+            <p>
+                O primeiro formulário apresenta uma estrutura
+                desorganizada. A segunda versão utiliza uma
+                organização mais clara para melhorar a experiência.
+            </p>
+
+
+            <div class="formularios-container">
+
+
+                <div class="formulario-antigo">
+
+                    <h3>Formulário antigo</h3>
+
+                    <input
+                        type="text"
+                        placeholder="Nome"
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Email"
+                    >
+
+                    <input
+                        type="password"
+                        placeholder="Senha"
+                    >
+
+                    <button>
+                        Enviar
+                    </button>
+
+                </div>
+
+
+                <div class="formulario-novo">
+
+                    <h3>Formulário melhorado</h3>
+
+                    <label for="nomeRedesign">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeRedesign"
+                        placeholder="Digite seu nome completo"
+                    >
+
+
+                    <label for="emailRedesign">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailRedesign"
+                        placeholder="Digite seu e-mail"
+                    >
+
+
+                    <label for="senhaRedesign">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senhaRedesign"
+                        placeholder="Digite sua senha"
+                    >
+
+                    <button onclick="enviarFormulario()">
+                        Criar conta
+                    </button>
+
+                    <p id="mensagemRedesign"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Teste A/B -->
+
+        <section id="testeAB">
+
+            <h2>Teste A/B</h2>
+
+            <p>
+                Clique em uma das versões do botão para simular
+                um teste A/B. Os cliques serão contabilizados
+                separadamente.
+            </p>
+
+
+            <div class="teste-container">
+
+
+                <div class="teste-card">
+
+                    <h3>Versão A</h3>
+
+                    <button
+                        class="botaoA"
+                        onclick="registrarClique('A')"
+                    >
+                        Começar agora
+                    </button>
+
+                    <p>
+                        Cliques:
+                        <span id="cliquesA">0</span>
+                    </p>
+
+                </div>
+
+
+                <div class="teste-card">
+
+                    <h3>Versão B</h3>
+
+                    <button
+                        class="botaoB"
+                        onclick="registrarClique('B')"
+                    >
+                        Quero começar
+                    </button>
+
+                    <p>
+                        Cliques:
+                        <span id="cliquesB">0</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p id="resultadoAB" class="resultadoAB"></p>
+
+        </section>
+
+
+        <!-- Cadastro Mobile -->
+
+        <section id="cadastro">
+
+            <h2>Cadastro Otimizado para Mobile</h2>
+
+            <p>
+                Simulação de um fluxo de cadastro desenvolvido
+                para facilitar o preenchimento em dispositivos móveis.
+            </p>
+
+
+            <div class="mobile-container">
+
+                <span class="material-icons">
+                    smartphone
+                </span>
+
+                <h3>Crie sua conta</h3>
+
+                <p>
+                    Preencha os dados abaixo para continuar.
+                </p>
+
+
+                <form onsubmit="realizarCadastro(event)">
+
+                    <label for="nomeCadastro">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeCadastro"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+
+                    <label for="emailCadastro">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailCadastro"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+
+
+                    <label for="senhaCadastro">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senhaCadastro"
+                        placeholder="Crie uma senha"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Continuar
+                    </button>
+
+                </form>
+
+
+                <p id="mensagemCadastro"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Acessibilidade -->
+
+        <section id="acessibilidade">
+
+            <h2>Formulário Acessível</h2>
+
+            <p>
+                Esta versão utiliza recursos para melhorar a
+                acessibilidade e facilitar o uso por pessoas
+                que utilizam leitores de tela.
+            </p>
+
+
+            <div class="acessibilidade-container">
+
+                <form
+                    onsubmit="enviarFormularioAcessivel(event)"
+                    aria-label="Formulário de contato"
+                >
+
+                    <label for="nomeAcessivel">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeAcessivel"
+                        name="nome"
+                        aria-required="true"
+                        aria-describedby="ajudaNome"
+                        required
+                    >
+
+                    <small id="ajudaNome">
+                        Informe seu nome completo.
+                    </small>
+
+
+                    <label for="emailAcessivel">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailAcessivel"
+                        name="email"
+                        aria-required="true"
+                        required
+                    >
+
+
+                    <label for="mensagemAcessivel">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        id="mensagemAcessivel"
+                        name="mensagem"
+                        rows="5"
+                        aria-required="true"
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+
+
+                    <p
+                        id="mensagemAcessivelResultado"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+
+            
+
+        </section>
+
+
+    </article>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 - UX e UI
+    </p>
+
+</footer>
+
+
+<script>
+
+
+    // Redesign de formulário
+
+    function enviarFormulario() {
+
+        const mensagem =
+            document.getElementById("mensagemRedesign");
+
+        mensagem.innerHTML =
+            "Formulário enviado com sucesso!";
+
+        mensagem.className = "sucesso";
+
+    }
+
+
+    // Teste A/B
+
+    let cliquesA = 0;
+
+    let cliquesB = 0;
+
+
+    function registrarClique(versao) {
+
+        if (versao === "A") {
+
+            cliquesA++;
+
+            document.getElementById("cliquesA").innerHTML =
+                cliquesA;
+
+        } else {
+
+            cliquesB++;
+
+            document.getElementById("cliquesB").innerHTML =
+                cliquesB;
+
+        }
+
+        atualizarResultadoAB();
+
+    }
+
+
+    function atualizarResultadoAB() {
+
+        const resultado =
+            document.getElementById("resultadoAB");
+
+
+        if (cliquesA === 0 && cliquesB === 0) {
+
+            resultado.innerHTML = "";
+
+            return;
+
+        }
+
+
+        if (cliquesA > cliquesB) {
+
+            resultado.innerHTML =
+                "Até o momento, a Versão A recebeu mais cliques.";
+
+        } else if (cliquesB > cliquesA) {
+
+            resultado.innerHTML =
+                "Até o momento, a Versão B recebeu mais cliques.";
+
+        } else {
+
+            resultado.innerHTML =
+                "As duas versões possuem a mesma quantidade de cliques.";
+
+        }
+
+    }
+
+
+    // Cadastro mobile
+
+    function realizarCadastro(event) {
+
+        event.preventDefault();
+
+
+        const mensagem =
+            document.getElementById("mensagemCadastro");
+
+
+        mensagem.innerHTML =
+            "Cadastro realizado com sucesso!";
+
+        mensagem.className = "sucesso";
+
+    }
+
+
+    // Formulário acessível
+
+    function enviarFormularioAcessivel(event) {
+
+        event.preventDefault();
+
+
+        const mensagem =
+            document.getElementById(
+                "mensagemAcessivelResultado"
+            );
+
+
+        mensagem.innerHTML =
+            "Mensagem enviada com sucesso!";
+
+        mensagem.className = "sucesso";
+
+    }
+
+
+</script>
+
+</body>
+</html>
